@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nomade Digital</title>
+        <link rel="stylesheet" href="/assets/css/estilos.css">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+
+        <main class="contenedor__maestro">
+            
+            <header class="portada">
+
+                <div class="titulo">
+
+                    <h1>NOMADE DIGITAL</h1>
+                    <p>Diseñador web</p>
+
+                </div>
+
+                <div class="rrss">
+
+                    <span>Conoce mis aventuras</span>
+
+                    <ul>
+
+                        <li>
+
+                            <a href="#" target="_blank">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+
+                        </li>
+    
+                        <li>
+
+                            <a href="https://wa.me/+56967312949" target="_blank">
+                                <i class="ri-whatsapp-line"></i>
+                            </a>
+
+                        </li>
+    
+                        <li>
+
+                            <a href="https://github.com/Alan-RGB2610" target="_blank">
+                                <i class="ri-github-line"></i>
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="btn-cotizar">
+
+                    <a href="#cotizar">
+                        Cotizar web
+                        <i class="ri-arrow-down-s-line"></i>
+                    </a>
+                    
+                </div>
+
+            </header>
+            <section class="contacto" id="cotizar">
+
+                <form class="formulario" action="enviar.php" method="POST">
+
+                    <div>
+
+                        <label for="nombre">Nombre</label>
+                        <input id="nombre" type="text" name="nombre" placeholder="Ingresa tu nombre">
+
+                    </div>
+
+                    <div>
+
+                        <label for="telefono">Telefono</label>
+                        <input id="telefono" type="tel" name="telefono" placeholder="Ingresa tu número de wsp con codigo de areas" required>
+
+                    </div>
+
+                    <div>
+
+                        <label for="Email">Email</label>
+                        <input id="Email" type="mail" name="Email" placeholder="Ingresa tu correo electronico" required>
+
+                    </div>
+
+                    <div>
+
+                        <label for="selecciona">Selecciona el tipo de web</label>
+
+                        <select name="tipoweb" id="selecciona">
+
+                            <option value="onepage" selected>One page</option>
+                            <option value="corporativa" selected>Corporativa</option>
+                            <option value="ecommerce" selected>e-Commerce</option>
+                            <option value="elearning" selected>e-Learning</option>
+                            <option value="otro" selected>Otro</option>
+
+                        </select>
+
+                    </div>
+
+                    <div>
+
+                        <label for="mensaje">Mensaje</label>
+                        <textarea name="mensaje" id="mensaje" placeholder="Hablame sobre tus secciones de página"></textarea>
+
+                    </div>
+                    
+                    <div>
+
+                        <label for="boceto">Sube tu boceto de tu idea</label>
+                        <input type="file" name="boceto">
+
+                    </div>
+
+                    <input type="submit" value="Cotizar">
+                    
+                </form>
+
+            </section>
+            
+        </main>
+
+    </body>
+
+</html>
